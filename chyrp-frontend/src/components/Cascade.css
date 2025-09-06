@@ -1,0 +1,77 @@
+/* src/components/Cascade.css */
+
+.cascade-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.cascade-item {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.cascade-item-default {
+  padding: 1rem;
+  background: #f3f4f6;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+.cascade-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.cascade-spinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #e5e7eb;
+  border-top: 2px solid #8b5cf6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.cascade-error {
+  text-align: center;
+  padding: 2rem;
+  color: #ef4444;
+}
+
+.cascade-retry-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cascade-retry-btn:hover {
+  background: #7c3aed;
+}
+
+.cascade-end {
+  text-align: center;
+  padding: 2rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.cascade-empty {
+  text-align: center;
+  padding: 3rem;
+  color: #6b7280;
+}
